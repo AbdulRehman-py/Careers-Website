@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Jovian Careers</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+    <style>
+      #banner {
+        height: 360px;
+        width: 100%;
+        object-fit:cover;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+    <h1 class="text-center mt-2 mb-4">Jovian Careers</h1>
+    <img class="img-fluid" id="banner" src="https://careers-website.rogerclarke.repl.co/static/banner.jpeg" >
+    <h2 class="text-center mt-2 mb-4">About Jovian</h2>
+    <p class="lead">
+      “All our dreams can come true, if we have the courage to pursue them.” —Walt Disney
+“The secret of getting ahead is getting started.” —Mark Twain
+“I’ve missed more than 9,000 shots in my career. I’ve lost almost 300 games. 26 times I’ve been trusted to take the game winning shot and missed. I’ve failed over and over and over again in my life, and that is why I succeed.” —Michael Jordan
+“Don’t limit yourself. Many people limit themselves to what they think they can do. You can go as far as your mind lets you. What you believe, remember, you can achieve.” —Mary Kay Ash
+“The best time to plant a tree was 20 years ago. The second best time is now.” ―Chinese Proverb
+    </p>
+    <h2 class="text-center mt-2 mb-4">Open Postions</h2>
+      <div>
+        {% for job in jobs %}
+        {% include 'jobitem.html' %}
+        {% endfor %}
+      </div>
+   
+    <div class="text-center">
+    <button class="btn btn-primary btn-lg mt-4">Contact Us</button>
+      <p class="mt-4">Copyright 2022, Jovian</p>
+    </div>
+    </div>
+    </body>
+</html>
